@@ -7,11 +7,11 @@ spec:
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: pacman-gitops # guestbook-ui
+      app: pacman-gitops-prod # guestbook-ui
   template:
     metadata:
       labels:
-        app: pacman-gitops # guestbook-ui
+        app: pacman-gitops-prod # guestbook-ui
     spec:
       containers:
       - image: quay.io/redhat-scholars/pacman-kikd:1.0.0 # nginxinc/nginx-unprivileged:latest
