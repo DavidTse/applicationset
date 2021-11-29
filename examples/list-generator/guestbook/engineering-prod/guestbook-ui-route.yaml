@@ -1,13 +1,13 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: pacman-gitops
+  name: pacman-gitops-prod
   labels:
-    app: pacman-gitops
+    app: pacman-gitops-prod
 spec:
   to:
     kind: Service
-    name: pacman-gitops
+    name: pacman-gitops-prod
     weight: 100
   port:
     targetPort: 8080
