@@ -21,10 +21,10 @@ spec:
             url: https://kubernetes.default.svc
             values:
               project: default
-          - cluster: engineering-prod
-            url: https://kubernetes.default.svc
-            values:
-              project: default
+#          - cluster: engineering-prod
+#            url: https://kubernetes.default.svc
+#            values:
+#              project: default
   template:
     metadata:
       name: '{{path.basename}}-{{cluster}}'
